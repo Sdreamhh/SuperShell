@@ -3,5 +3,5 @@ Linux system programming learning.
 
 TODOs:
 
-- A shell.
+- A Shell.
 - An Editor.
