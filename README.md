@@ -5,3 +5,4 @@ TODOs:
 
 - A Shell.
 - An Editor.
+- A Command.
