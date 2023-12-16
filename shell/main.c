@@ -5,8 +5,6 @@
 
 int main(int argc, char* argv[]) {
 	
-	printf("%shello world%s\n", font(START, FG_RED, BG_BLACK, NORMAL), font(END, FG_RED, BG_BLACK, NORMAL));
-
 	char cwd[128];
 	char hostame[128];
 	char cmdline[128];
@@ -15,7 +13,11 @@ int main(int argc, char* argv[]) {
 
 
 	while(1) {
-		printf("%s->%s> ", hostame, cwd);	
+		printf("├");		
+		printf("%s%s%s%s%s", FG_GREEN, FT_ITALIC, FT_BOLD, hostame, FT_END);
+		printf("%s%s->%s", FT_BLINK, FT_BOLD, FT_END);
+		printf("%s%s%s%s", FG_MAGENTA, FT_BOLD, cwd, FT_END); 
+		printf("\n└>");
 		fgets(cmdline, 128, stdin);
 	}
 
