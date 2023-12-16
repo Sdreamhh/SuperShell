@@ -8,7 +8,7 @@ int main(int argc, char* argv[]) {
 	char cwd[128];
 	char hostame[128];
 	char cmdline[128];
-       	getcwd(cwd, 128);
+    getcwd(cwd, 128);
 	gethostname(hostame, 128);
 
 
